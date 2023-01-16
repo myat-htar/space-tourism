@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 0.9rem;
+}
 ul {
   list-style: none;
 }
