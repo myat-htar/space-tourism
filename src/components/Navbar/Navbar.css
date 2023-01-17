@@ -65,7 +65,7 @@
   align-self: flex-end;
   cursor: pointer;
 }
-@media (min-width: 55em) {
+@media (min-width: 55rem) {
   .hamburger-menu {
     display: none;
   }
@@ -91,7 +91,7 @@
     display: none;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 70rem) {
   .navbar {
     padding: 3rem 0 3rem 3rem;
   }

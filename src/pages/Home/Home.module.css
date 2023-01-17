@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   background-image: url("../../../assets/home/background-home-mobile.jpg");
-  background-size: contain;
   background-repeat: no-repeat;
   background-size: 100% 100vh;
   background-attachment: fixed;
@@ -53,7 +52,7 @@
   box-shadow: 0 0 100px rgba(240, 240, 240, 0.7);
   scale: 0.98;
 }
-@media (min-width: 55em) {
+@media (min-width: 45rem) {
   .container {
     background-image: url("../../../assets/home/background-home-tablet.jpg");
   }
@@ -70,7 +69,7 @@
     font-size: 2rem;
   }
 }
-@media (min-width: 70em) {
+@media (min-width: 70rem) {
   .container {
     flex-direction: row;
     background-image: url("../../../assets/home/background-home-desktop.jpg");
@@ -80,7 +79,7 @@
   .para {
     margin: 0;
   }
-  .self-end {
+  .self_end {
     align-self: flex-end;
   }
   .btn {
