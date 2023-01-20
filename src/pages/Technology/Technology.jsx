@@ -10,7 +10,7 @@ function Technology() {
     setSelectedTerminology(selectedItem);
   }
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <h1 className={styles.title}>
         <span>03</span> SPACE LAUNCH 101
       </h1>
@@ -54,7 +54,7 @@ function Technology() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

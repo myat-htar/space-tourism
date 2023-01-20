@@ -5,6 +5,8 @@ import Home from "./pages/Home/Home";
 import Destination from "./pages/Destination/Destination";
 import Crew from "./pages/Crew/Crew";
 import Technology from "./pages/Technology/Technology";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 function App() {
   return (
     <>

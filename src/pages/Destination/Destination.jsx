@@ -10,7 +10,7 @@ function Destination() {
     setSelectedDestination(selectedItem);
   }
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <h1 className={styles.title}>
         <span>01</span>pick your destination
       </h1>
@@ -52,7 +52,7 @@ function Destination() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
