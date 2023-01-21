@@ -9,6 +9,7 @@
   font-family: "Barlow Condensed", sans-serif;
   padding: 2rem 2rem 0;
   overflow: hidden;
+  z-index: 1000;
 }
 .navbar-nav-wrapper {
   display: flex;
@@ -22,7 +23,7 @@
   backdrop-filter: blur(40px);
   padding: 2rem;
   z-index: 1000;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .navbar-nav-wrapper.show {
   right: 0;

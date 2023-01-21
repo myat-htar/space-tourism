@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import data from "../../data";
 import styles from "./Crew.module.css";
 import Slider from "react-slick";
+import { motion } from "framer-motion";
 function Crew() {
   const [slider, setSlider] = useState(null);
   const [slideIndex, setSlideIndex] = useState(0);
@@ -14,8 +15,29 @@ function Crew() {
     slidesToScroll: 1,
     beforeChange: (current, next) => setSlideIndex(next),
   };
+  const containerVariant = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        ease: "easeInOut",
+      },
+    },
+    exit: {
+      opacity: 0,
+    },
+  };
   return (
-    <section className={styles.container}>
+    <motion.section
+      variants={containerVariant}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      className={styles.container}
+    >
       <h1 className={styles.title}>
         <span>02</span>meet your crew
       </h1>
@@ -45,7 +67,7 @@ function Crew() {
           </div>
         ))}
       </Slider>
-    </section>
+    </motion.section>
   );
 }
 

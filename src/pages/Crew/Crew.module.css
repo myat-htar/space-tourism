@@ -1,5 +1,6 @@
 .container {
   background-image: url("../../../assets/crew/background-crew-mobile.jpg");
+  background-color: #222;
   background-repeat: no-repeat;
   background-size: 100% 100vh;
   background-attachment: fixed;
@@ -73,6 +74,10 @@
   background: #fff;
   border-radius: 50%;
   opacity: 0.17;
+  cursor: pointer;
+}
+.indicator:hover {
+  opacity: 1;
 }
 .indicator.selected {
   opacity: 1;

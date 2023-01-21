@@ -1,9 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import styles from "./Home.module.css";
 function Home() {
+  const containerVariant = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        ease: "easeInOut",
+      },
+    },
+    exit: {
+      opacity: 0,
+    },
+  };
+
   return (
-    <main className={styles.container}>
+    <motion.main
+      variants={containerVariant}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      className={styles.container}
+    >
       <div>
         <h1 className={styles.title}>
           so, you want to travel to <span>space</span>
@@ -18,7 +41,7 @@ function Home() {
       <Link to="/destination" className={styles.self_end}>
         <button className={styles.btn}>explore</button>
       </Link>
-    </main>
+    </motion.main>
   );
 }
 

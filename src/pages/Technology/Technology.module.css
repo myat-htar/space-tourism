@@ -1,5 +1,6 @@
 .container {
   background-image: url("../../../assets/technology/background-technology-mobile.jpg");
+  background-color: #222;
   background-repeat: no-repeat;
   background-size: 100% 100vh;
   background-attachment: fixed;
@@ -107,7 +108,6 @@
   }
   .info_wrapper {
     flex-direction: row;
-    align-items: flex-start;
     gap: 3rem;
     order: -1;
     padding: 0;

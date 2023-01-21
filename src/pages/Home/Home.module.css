@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   background-image: url("../../../assets/home/background-home-mobile.jpg");
+  background-color: #222;
   background-repeat: no-repeat;
   background-size: 100% 100vh;
   background-attachment: fixed;
@@ -49,8 +50,7 @@
   transition: all 0.2s ease-in;
 }
 .btn:hover {
-  box-shadow: 0 0 100px rgba(240, 240, 240, 0.7);
-  scale: 0.98;
+  box-shadow: 0 0 100px 10px rgb(208, 214, 249);
 }
 @media (min-width: 45rem) {
   .container {
